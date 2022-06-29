@@ -46,7 +46,7 @@
     | ----- | --- | -------- |
     | OID | oid |  |
     | Name | name |  |
-    | Repeating | Yes | No |  현재 종류의 폼이 현재 studyevent안에서 반복적으로 발생할 수 있음을 나타낸다. |
+    | Repeating | Yes or No |  현재 종류의 폼이 현재 studyevent안에서 반복적으로 발생할 수 있음을 나타낸다. |
     
     ### 💚예제
     
