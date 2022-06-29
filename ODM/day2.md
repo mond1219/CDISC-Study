@@ -24,6 +24,14 @@
     	<StudyEventRef StudyEventOID="SE.2" Mandatory="No"/>
     	<StudyEventRef StudyEventOID="SE.3" Mandatory="No"/>
     </Protocol>
+    <StudyEventDef OID="SE.1" Name="Baseline (T0)" Repeating="No" Type="Common">
+    	<Description>
+    		<TranslatedText xml:lang="en">Baseline (T0)</TranslatedText>
+                <TranslatedText xml:lang="de">Vorbefragung (T0)</TranslatedText>
+       </Description>
+       		<FormRef FormOID="F.1" Mandatory="No"/>
+                <FormRef FormOID="F.2" Mandatory="No"/>
+    </StudyEventDef>
     ```
     
 
