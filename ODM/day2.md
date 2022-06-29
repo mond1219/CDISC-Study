@@ -13,7 +13,7 @@
     | ----- | --- | -------- |
     | StudyEventOID | oidref | StudyEventDef의 OID를 참조한다. |
     | OrderNumber | integer | StudyEventDefs의 목록이 사용자에게 표시될 때마다 사용할 수 있도록 StudyEventDefs에 대한 순서를 제공합니다. event 일정, 작업시간, 데이터 정확성을 의미하는 것은 아니다. |
-    | Mandatory | Yes \ No |  MetaDataVersion을 포함하는 임상 데이터가 Study event 인스턴스가 없으면 불완전하다는 것을 나타낸다. 불완전한 ODM 임상 데이터 파일은 연구 검토 및 분석하기에 불완전한 것으로 볼 수 있다.  |
+    | Mandatory | Yes \ No |  Yes일때, MetaDataVersion을 포함하는 임상 데이터가 Study event 인스턴스가 없으면 불완전하다는 것을 나타낸다. 불완전한 ODM 임상 데이터 파일은 연구 검토 및 분석하기에 불완전한 것으로 볼 수 있다.  |
     | CollectionExceptionConditionOID | oidref | Study event에 대한 데이터를 수집하면 안되는 상황을 설명한다. ConditionDef를 참조한다. |
     
     ### 💚예제
@@ -84,7 +84,7 @@ Contained in : FormDef
 | ----- | --- | -------- |
 | ItemGroupOID | oidref | ItemGroupDef 참고 |
 | OrderNumber | integer |  ItemGroupDefs의 목록이 사용자에게 표시될 때마다 사용할 수 있도록 ItemGroupDefs이나 FormDef에 대한 순서를 제공한다. event 일정, 시간 순서나 데이터 정확성에 관한 내용는 아니다.  |
-| Mandatory | Yes \ No | Mandatory의 item Group 인스턴스가 없으면 이 유형의 인스턴스에 대한 임상 데이터가 불완전하다는 것을 나타냅니다. 그래서 불완전한 ODM 임상 데이터 파일은 연구 검토 및 분석 목적으로 불완전 한 것으로 간주될 수 있다.  |
+| Mandatory | Yes \ No | Yes일때, Mandatory의 item Group 인스턴스가 없으면 이 유형의 인스턴스에 대한 임상 데이터가 불완전하다는 것을 나타냅니다. 그래서 불완전한 ODM 임상 데이터 파일은 연구 검토 및 분석 목적으로 불완전 한 것으로 간주될 수 있다.  |
 | CollectionExceptionConditionOID | oidref | 주어졌을 때, ItemGroup에 대한 데이터를 수집해서는 안 되는 상황을 설명하는 ConditionDef를 참고한다. |
 
 ### 💚예제
