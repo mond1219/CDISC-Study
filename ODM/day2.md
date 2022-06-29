@@ -2,8 +2,8 @@
 
 # **3.1.1.3.2.2** StudyEventRef
 
-- 연구의 특정 버전 내에서 발생하는 StudyEventRef에 대한 참조한다.
-- StudyEventRefs list : 연구 내에서 발생할 수 있는 연구 event 유형을 식별. 프로토콜 내의 StudyEventRefs에는 중복된 OrderNumbers나 StudyEventOIDs가 없어야 합니다.
+- 연구의 특정 버전 내에서 발생하는 StudyEventRef에 대한 참조
+- StudyEventRefs list : 연구 내에서 발생할 수 있는 연구 StudyEvent유형을 식별. 프로토콜 내의 StudyEventRefs에는 중복된 OrderNumbers나 StudyEventOIDs가 없어야 합니다.
     
     Contained in : Protocol
     
@@ -46,7 +46,7 @@
     | ----- | --- | -------- |
     | OID | oid |  |
     | Name | name |  |
-    | Repeating | Yes or No |  현재 종류의 폼이 현재 studyevent안에서 반복적으로 발생할 수 있음을 나타낸다. |
+    | Repeating | Yes or No |  현재 종류의 폼이 현재 studyevent안에서 반복적으로 발생할 수 있다.</br> study event안에서 Formref를 작성할때 하위의 FormDef의 OID를 참조하는데, event안에서 반복적으로 FormOid를 참조할 경우 Yes, 아닐때는 No |
     
     ### 💚예제
     
